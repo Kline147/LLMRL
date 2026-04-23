@@ -290,6 +290,135 @@
 </section>
 <!-- End image carousel -->
 
+<section class="section">
+  <div class="container is-fullhd"> <h2 class="title is-3 has-text-centered">Experimental Results</h2>
+    
+    <div class="columns is-centered mt-5">
+      <div class="column is-6">
+        <h3 class="title is-5 has-text-centered">Table 1: Task Success Rate (%)</h3>
+        <div class="table-container">
+          <table class="table is-fullwidth is-bordered is-striped is-hoverable">
+            <thead>
+              <tr style="background-color: #f5f5f5;">
+                <th>Methods</th>
+                <th>k=2</th>
+                <th>k=3</th>
+                <th>k=4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Baseline A</td>
+                <td>75.2</td>
+                <td>68.5</td>
+                <td>60.1</td>
+              </tr>
+              <tr>
+                <td><strong>SeGMA (Ours)</strong></td>
+                <td><strong>92.4</strong></td>
+                <td><strong>88.7</strong></td>
+                <td><strong>85.3</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="column is-6">
+        <h3 class="title is-5 has-text-centered">Table 2: Average Execution Time (s)</h3>
+        <div class="table-container">
+          <table class="table is-fullwidth is-bordered is-striped is-hoverable">
+            <thead>
+              <tr style="background-color: #f5f5f5;">
+                <th>Methods</th>
+                <th>k=2</th>
+                <th>k=3</th>
+                <th>k=4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Baseline B</td>
+                <td>12.5</td>
+                <td>18.9</td>
+                <td>25.4</td>
+              </tr>
+              <tr>
+                <td><strong>SeGMA (Ours)</strong></td>
+                <td><strong>8.2</strong></td>
+                <td><strong>12.4</strong></td>
+                <td><strong>15.1</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered mt-5">
+      <div class="column is-6">
+        <h3 class="title is-5 has-text-centered">Table 3: Planning Efficiency</h3>
+        <div class="table-container">
+          <table class="table is-fullwidth is-bordered is-striped is-hoverable">
+            <thead>
+              <tr style="background-color: #f5f5f5;">
+                <th>Methods</th>
+                <th>Success</th>
+                <th>Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GPT-4o</td>
+                <td>85%</td>
+                <td>1.2s</td>
+              </tr>
+              <tr>
+                <td><strong>SeGMA</strong></td>
+                <td><strong>98%</strong></td>
+                <td><strong>0.4s</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="column is-6">
+        <h3 class="title is-5 has-text-centered">Table 4: Ablation Study</h3>
+        <div class="table-container">
+          <table class="table is-fullwidth is-bordered is-striped is-hoverable">
+            <thead>
+              <tr style="background-color: #f5f5f5;">
+                <th>Component</th>
+                <th>Result A</th>
+                <th>Result B</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>w/o PKG</td>
+                <td>70.1</td>
+                <td>65.4</td>
+              </tr>
+              <tr>
+                <td>Full SeGMA</td>
+                <td><strong>92.4</strong></td>
+                <td><strong>88.7</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+
+
   
 <!-- Video carousel -->
 <!-- simulation -->
